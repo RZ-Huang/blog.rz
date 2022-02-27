@@ -18,7 +18,7 @@ describe("Draft posts", function () {
     return;
   }
   describe("draft post", () => {
-    const DRAFT_POST = "_site/posts/fifthpost/index.html";
+    const DRAFT_POST = "";
 
     it("w. draft: true should NOT be rendered", () => {
       var draftfileexists = false;
@@ -34,7 +34,7 @@ describe("Draft posts", function () {
     });
   });
   describe("draft post from future", () => {
-    const DRAFT_POST_FUTURE = "_site/posts/sixthpostdraft/index.html";
+    const DRAFT_POST_FUTURE = "";
 
     it("should NOT be rendered", () => {
       var draftpostfutureexists = false;
