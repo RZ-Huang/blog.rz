@@ -1,6 +1,6 @@
 /* Color customization */
 :root {
-  --primary: #f9c412;
+  --primary: #131313;
   --primary-dark: #e7bf60;
 }
 
@@ -65,6 +65,10 @@ share-widget button {
   margin: 0;
 }
 
+share-widget button:not([disabled]) {
+  background-color: white;
+}
+
 share-widget button:active {
   transform: scale(1.2);
 }
@@ -99,7 +103,7 @@ header aside {
 
 #reading-progress {
   z-index: 1;
-  background-color: var(--primary);
+  background-color: var(--primary-dark);
   width: 100vw;
   position: absolute;
   left: 0;
@@ -112,6 +116,14 @@ header aside {
 
 #posts li {
   margin-bottom: 0.5em;
+}
+
+.post {
+  margin-top: 12px;
+}
+
+.post-datetime {
+  color: gray;
 }
 
 /* https://github.com/rsms/inter/blob/master/LICENSE.txt
@@ -834,8 +846,8 @@ video {
 }
 body {
   font-family: var(--font-family);
-  background: #181818;
-  color: #eee;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
 }
 section {
   margin-left: auto;
@@ -922,7 +934,7 @@ main {
   border-top: 0.5px solid #ccc;
 }
 footer {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   color: #fff;
   padding: 3em;
   text-align: center;

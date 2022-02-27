@@ -7,6 +7,16 @@ eleventyNavigation:
   order: 3
 ---
 
-I am a person that writes stuff.
+Hi, I am RZ, a Web Development Frontend Engineer, living in Taiwan.
 
-This blog template is based on [eleventy-high-performance-blog](https://www.industrialempathy.com/posts/eleventy-high-performance-blog/) which itself is based on [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
+### Frontend Stacks
+
+- JavaScript
+- CSS3
+- HTML5
+- React.js (class, hooks)
+- Webpack
+
+---
+
+The blog is based on the [eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog).
