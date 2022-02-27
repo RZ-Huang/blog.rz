@@ -1,7 +1,8 @@
 /* Color customization */
 :root {
   --primary: #131313;
-  --primary-dark: #e7bf60;
+  --primary-dark: #3674d2;
+  --header: #bcd4ff;
 }
 
 .test-dead-code-elimination-sentinel {
@@ -69,6 +70,10 @@ share-widget button:not([disabled]) {
   background-color: white;
 }
 
+share-widget button:not([disabled]):hover {
+  background-color: var(--header);
+}
+
 share-widget button:active {
   transform: scale(1.2);
 }
@@ -103,7 +108,7 @@ header aside {
 
 #reading-progress {
   z-index: 1;
-  background-color: var(--primary-dark);
+  background-color: var(--header);
   width: 100vw;
   position: absolute;
   left: 0;
@@ -118,13 +123,34 @@ header aside {
   margin-bottom: 0.5em;
 }
 
-.post {
-  margin-top: 12px;
+.postslist {
+  margin-top: 3em;
 }
 
-.post-datetime {
+.postslist h4 {
+  margin: 0.4em 0px;
+}
+
+.postslist-datetime {
   color: gray;
 }
+
+/* post */
+.post__published-time {
+  padding: 12px 0px;
+  font-size: 14px;
+  color: gray;
+}
+
+.post a {
+  text-decoration: underline;
+}
+
+.post a:hover {
+  text-decoration: none;
+}
+
+/* post */
 
 /* https://github.com/rsms/inter/blob/master/LICENSE.txt
 
@@ -879,7 +905,7 @@ header label {
   display: none;
 }
 header {
-  padding: 4.5em 1.5em 3em;
+  padding: 4.5em 1.5em 0em;
   width: 37.5em;
   margin: 0 auto;
   text-align: center;
@@ -936,7 +962,7 @@ main {
 footer {
   background: rgba(255, 255, 255, 0.8);
   color: #fff;
-  padding: 3em;
+  padding: 1em;
   text-align: center;
 }
 footer > * {
@@ -948,6 +974,10 @@ footer nav a img {
 footer nav,
 footer p {
   font-size: 90%;
+}
+footer a {
+  font-size: 14px;
+  color: var(--primary);
 }
 article {
   max-width: 100%;
@@ -1126,7 +1156,7 @@ mark {
 }
 
 a {
-  color: var(--primary);
+  color: var(--primary-dark);
 }
 
 ::-webkit-scrollbar-thumb:hover {
