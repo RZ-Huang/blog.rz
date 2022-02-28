@@ -11,7 +11,7 @@
     {% if isdevelopment %}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     {% else %}
-    <link rel="icon" href="{{ '/img/favicon/favicon-192x192.png' | addHash }}" type="image/png">
+    <link rel="icon" href="{{ '/img/favicon/favicon-32x32.png' | addHash }}" type="image/png">
     {% endif %}
     <meta name="theme-color" content="#f9c412">
     <meta name="robots" content="max-snippet:-1, max-image-preview: large, max-video-preview: -1">
@@ -59,13 +59,17 @@
     <header>
       <nav>
         <div id="nav">
-          <h1><a href="{{ '/' | url }}" title="Homepage">{{ metadata.title }}</a></h1>
+          {% if page.url !== '/' %}
+            <h1><a href="{{ '/' | url }}" title="Homepage">{{ metadata.title }}</a></h1>
+          {% endif %}
           {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
           {%- for entry in collections.all | eleventyNavigation %}
             <a href="{{ entry.url | url }}">{{ entry.title }}</a>
           {%- endfor %}
         </div>
-        <div id="reading-progress" aria-hidden="true"></div>
+        {% if page.url.indexOf('/posts') > -1 %}
+          <div id="reading-progress" aria-hidden="true"></div>
+        {% endif %}
       </nav>
       <h3>{{ title }}</h3>
       {% block extraArticleHeader %}{% endblock %}

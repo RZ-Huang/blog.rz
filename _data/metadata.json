@@ -1,5 +1,5 @@
 {
-  "title": "RZ",
+  "title": "Boundarylesstacks",
   "url": "https://blog-rz.pages.dev",
   "domain": "pages.dev",
   "description": "RZ's blog, frontend stack, web stacks, tech, software, reading note, and som gossips",
@@ -17,7 +17,7 @@
     "url": "https://update-me.com/feed/feed.json"
   },
   "author": {
-    "name": "RZ's blog",
+    "name": "RZ",
     "twitterHandle": "RZ"
   },
   "publisher": {
