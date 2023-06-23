@@ -2,7 +2,6 @@
 title: 這裡長灰塵了
 description: Draft
 date: 2023-06-24
-scheduled: 2023-06-24
 layout: layouts/post.njk
 tags:
   - test
